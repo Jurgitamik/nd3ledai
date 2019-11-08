@@ -1,0 +1,14 @@
+/* Fonas */
+
+.container {
+    display: inline-block;
+    width: 100%;
+    
+    background-color:blue;
+}
+    .ice {
+        width: 1200px;
+        height: 500px;
+        margin-top: 30px;
+        margin-left: calc ((100% - 1200px) / 2);
+    }
