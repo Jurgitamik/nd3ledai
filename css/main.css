@@ -10,6 +10,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 3px;
+    position: relative;
     }
 
     /* Ledai */
@@ -91,18 +92,15 @@
         }
             h1 {
                 display: inline-block;
-                float: left;
                 line-height: 40px;
                 font-size: 50px;
                 margin
             }
             h6 {
                 display: inline-block;
-                float: left;
             }
         i {
             display: inline-block;
-            float: left;
             margin-top: 20px;
             padding: 15px 20px;
             font-size: 20px;
@@ -114,8 +112,50 @@
             cursor: pointer;
         }
 
- square {
-     box-sizing: 10px
-     color pink;
-     
- }       
+ .container > .square {
+     display: inline-block;
+     width: 10px;
+     height: 10px;
+     box-sizing: content-box;
+     border: 5px solid pink;
+     border-radius: 3px;
+     margin-top: 10px;
+     animation-name: move;
+     animation-duration: 20s;
+     animation-iteration-count: infinite;
+     animation-direction: alternate-reverse;
+ }   
+@keyframes move {
+    0% {
+        margin-top: 10px;
+        margin-left: 0px;
+        transform: rotate(0deg);
+    }
+    100% {
+        margin-top: 500px;
+        margin-left: 30px;
+        transform: rotate(1800deg);
+    }
+}
+
+ .container > .triangle {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    box-sizing: content-box;
+    border: 5px solid rgb(218, 111, 170);
+    margin-top: 550px;
+    animation-direction: alternate;
+    
+}   
+ .container > .circle {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    box-sizing: content-box;
+    border: 5px solid yellow;
+    border-radius: 50%;
+    margin-left: 50px;
+    margin-top: 300px;
+    position: absolute;
+}   
