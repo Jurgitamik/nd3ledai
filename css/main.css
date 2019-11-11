@@ -81,22 +81,28 @@
             display: inline-block;
             float: left;
             width: 40%;
-            margin-top: 50px;
+            margin-top: 130px;
             margin-left: 50px;
             background-color: darkorchid;
+            font-variant: small-caps;
+            /* font-family: Arial, Helvetica, sans-serif ; */
         }
             h1 {
-                font-weight: bold;
+                display: inline-block;
+                float: left;
+                line-height: 40px;
+                font-size: 50px;
+                margin
             }
-            h3 {
-
+            h6 {
+                display: inline-block;
+                float: left;
             }
         i {
-           
-            margin-bottom: 20px;
-            padding: 20px 25px;
-            
-
+            display: inline-block;
+            float: left;
+            margin-top: 20px;
+            padding: 15px 20px;
             font-size: 20px;
             line-height: 20px;
             background-color: white;
